@@ -30,7 +30,6 @@ public void whiteBackground()  {
 public void colorWhiteValidation() throws IOException {
 	ScreenshotMethod sshot = PageFactory.initElements(driver, ScreenshotMethod.class);
 	sshot.takeScreenshotAtEndOfTest(driver);
-	colorWhiteConfirmation.getText();
 	System.out.println(colorWhiteConfirmation.getText());
 	SoftAssert softAssertion = new SoftAssert();
 	softAssertion.assertEquals(colorWhiteConfirmation.getText(), "background-color: white;");

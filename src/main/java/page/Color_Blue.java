@@ -31,7 +31,6 @@ public void blueBackground() throws IOException {
 }
 	public void colorBlueValidation() throws IOException {
 		sshot.takeScreenshotAtEndOfTest(driver);
-		colorBlueConfirmation.getText();
 		System.out.println(colorBlueConfirmation.getText());
 		SoftAssert softAssertion = new SoftAssert();
 		softAssertion.assertEquals(colorBlueConfirmation.getText(), "background-color: skyblue;");
